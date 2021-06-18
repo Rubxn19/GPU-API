@@ -1,0 +1,44 @@
+{% include "header.html" %}
+
+<div style="width:auto; height:auto; padding:20px">
+
+<h1>Numero de Gráficas: {{ cuantos }}</h1>
+
+<h2>Lista de tarjetas gráficas</h2>
+
+<table class="content-table" >
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Model</th>
+    <th>Brand</th>
+    <th>Chip</th>
+    <th>Retail Price</th>
+  </tr>
+  </thead>
+
+  {% for obj in Gpus.data %}
+
+  <tbody>
+  <tr class="active-row">
+      
+    <td>{{ obj.id }}</td>
+    <td>{{ obj.model }}</td>
+    <td>{{ obj.brand }}</td> <!-- El nombre del objeto debe ser igual al que está declarado en models.py (línea 34) -->
+    <td>{{ obj.chip }}</td>
+    <td>{{ obj.retail_price }}</td>
+      
+    <td><a class="btnEditar" href="{% url 'firstapp:editar' obj.id %}" id="update">Editar</a> <a class="btnEliminar" href="{% url 'firstapp:eliminar' obj.id obj.model %}" > Eliminar </a></td> 
+  </tr>
+</tbody>
+   
+  {% endfor %} 
+</table>
+
+<form action="{% url 'firstapp:agregar' %}" method="POST"> 
+  <input class="btnAgregar" type="submit" value = "Agregar GPU">
+</form>
+
+</div>
+
+{% include "footer.html" %}

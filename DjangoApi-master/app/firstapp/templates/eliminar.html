@@ -1,0 +1,17 @@
+{% include "header.html" %}
+
+
+    <form action="{% url 'firstapp:gpusDelete' id %}" method="POST">  
+        {% csrf_token %}
+        
+        <h1 class="lblEliminar">¿Tas seguro que quieres eliminar la {{ gpu }}, broder?</h1>
+
+        <input class="eliminar"type="submit" value = "Sí"> 
+   
+    </form>
+
+
+    <a href="{% url 'firstapp:vista' %}"> Cancelar</a>
+
+
+{% include "footer.html" %}

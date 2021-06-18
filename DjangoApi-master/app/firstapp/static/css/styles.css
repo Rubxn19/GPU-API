@@ -1,0 +1,134 @@
+* {
+	font-family: 'Quicksand';
+  }
+
+body{
+	background: #0F2027;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */	
+	padding:0px;
+	text-align: center;
+}
+
+ul {
+	background-color:#eaeaea;
+	font-size: 14px;
+	font-family: Arial;
+	text-decoration: none;
+} 
+
+  .content-table {
+	width: 90%;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	font-size: 1em;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.20);
+	text-align: left;
+  }
+  
+  .content-table thead tr {
+	color: #ffffff;
+	text-align: left;
+	font-weight: bold;
+  }
+  
+  .content-table th,
+  .content-table td {
+	padding: 20px 50px;
+  }
+  
+  .content-table tbody tr {
+	border-bottom: 1px solid #dddddd;
+  }
+  
+  .content-table tbody tr:nth-of-type(even) {
+	background-color: #f3f3f3;
+  }
+  
+  .content-table tbody tr:last-of-type {
+	border-bottom: 2px solid #009879;
+  }
+  
+  .content-table tbody tr.active-row {
+	font-weight: bold;
+	color: #00aa88;
+  }
+
+.btnAgregar{
+	margin-top: 35px;
+	font-size: medium;
+	border-radius: 10px;
+	padding: 8px;
+	background: #0F2027;
+	color: white;
+	font-weight: bold;
+}
+
+.editar{
+	font-size: medium;
+	border-radius: 10px;
+	padding: 8px;
+	background: #0F2027;
+	color: white;
+	font-weight: bold;
+}
+
+.eliminar{
+	font-size: medium;
+	border-radius: 10px;
+	padding: 8px;
+	background: #0F2027;
+	color: white;
+	font-weight: bold;
+	width: 80px;
+}
+
+.btnEliminar{
+	color: red;
+	margin-right:-30px;
+	margin-left: 35px;
+}
+
+.btnEditar{
+	color: greenyellow;
+}
+
+h1{
+	/* margin-top: 50px;
+	margin-bottom: 20px; */
+	color: #dddddd;
+}
+
+h2{
+	color: #00aa88;
+	font-weight: bold;
+}
+
+a{
+	color: white;
+}
+
+input[type=text]{
+	width: 20%;
+  padding: 3px 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+  display: grid;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #009879;
+}
+
+form{
+	color: #009879;
+	font-size: x-large;
+}
+
+.lblEliminar{
+	font-size:1.5em;
+}

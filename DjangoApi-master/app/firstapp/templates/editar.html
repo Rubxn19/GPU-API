@@ -1,0 +1,17 @@
+{% include "header.html" %}
+<h1> Editar GPU </h1>
+    
+        
+        <form method="POST" > <!-- En este caso la etiqueta <form> no lleva el atributo 'action="" ' ya que en views.py estoy trabajando con una sola función que es "editar", no como eliminar y agregar que me mandan a una función que solo es el html y del html me manda  a la función que elimina (teamsdelete) o agrega (teamsAdd) -->
+            {% csrf_token %}
+            {{ form.as_p }} <!--el (.as_p) es para dar espacios entre cada input (es como un <br>)-->
+                
+                
+            <input class="editar"type="submit" value = "Actualizar">               
+        </form>
+       
+
+    <br>
+    <a href="{% url 'firstapp:vista' %}"> Volver a la página principal</a>
+      
+{% include "footer.html" %}
